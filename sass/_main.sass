@@ -1,2 +1,377 @@
-// Normally mainpage styles
- 
+// menu
+.menu
+	font-size: 0
+	text-align: center
+	border-bottom: 4px solid #095F9B 
+	+border-radius(3px)
+	background-color: #c4ecfe
+	+background-image(linear-gradient(bottom, #056db9 0%, #09a1dd 100%))
+	+box-shadow(0 3px 12px rgba(6,115,188,.75))
+	.menu__item
+		position: relative
+		padding: 0 2% 
+		line-height: 52px
+		display: inline-block
+		a
+			color: #FFF 
+			text-decoration: none
+			font-size: 18.67px 
+			vertical-align: middle
+			border-bottom: 1px solid #51a6c8
+			+box
+			&:hover
+				border: none
+		&:before
+			position: absolute
+			content: ""
+			left: 0
+			top: 0
+			height: 100%
+			width: 1px
+			+opacity(.8)
+			background-color: #0fa6e2
+			+background-image(linear-gradient(bottom, #0d6ca7 0%, #077dc3 100%))
+		i
+			position: absolute
+			top: 0
+			left: -1px
+			height: 100%
+			width: 1px
+			background: #0E93D6 
+			display: block
+			+background-image(linear-gradient(bottom, #077ac1 0%, #15b0ed 100%))
+		&:first-child
+			&:before
+				display: none
+			i
+				display: none
+
+//.nav
+.nav
+	margin-bottom: 25px
+	.nav__item
+		position: relative
+		+border-radius(3px)
+		background-color: #fff
+		border-bottom: 1px solid #C5D1D8 
+		+box-shadow(0 1px 2px rgba(83,95,103,.3), inset 0 0 0 1px rgba(255,255,255,.38))
+		+background-image(linear-gradient(bottom, rgba(0,0,0,.05) 0%, rgba(255,255,255,.05) 100%))
+		+box
+		a
+			padding-left: 76px 
+			width: 100%
+			line-height: 66px
+			text-decoration: none
+			color: #40474A 
+			display: inline-block
+			+box
+			span
+				vertical-align: middle
+				line-height: 1.4
+				display: inline-block
+			&:hover
+				color: #FF6500 
+		&:hover
+			+background-image(linear-gradient(bottom, rgba(0,0,0,.05) 0%, rgba(255,255,255,.05) 100%)) 
+			.nav__list
+				height: auto
+				visibility: visible
+				+opacity(1) 
+				li
+					a
+						line-height: 30px
+		&:before
+			position: absolute
+			content: ""
+			left: 12px
+			top: 12px
+		&.nav__item1
+			&:before
+				+s(arr1)
+		&.nav__item2
+			&:before
+				+s(arr2)
+		&.nav__item3
+			&:before
+				+s(arr3)
+		&.nav__item4
+			&:before
+				+s(arr4)
+	.nav__list
+		position: relative
+		height: 0
+		visibility: hidden
+		overflow: hidden
+		+border-radius(0 0 3px 3px)
+		+opacity(0)
+		+transition(0.2s)
+		li
+			position: relative 
+			background-color: #edf4f8
+			border: 1px solid #f2f4f6 
+			&:before
+				position: absolute
+				content: ""
+				left: 10px
+				top: 14px
+				height: 1px
+				width: 10px
+				background: #FF6500  
+			a
+				padding-left: 25px
+				line-height: 0
+				color: #099EDA
+				span
+					text-decoration: underline
+				&:hover
+					color: #099EDA
+					span
+						text-decoration: none 
+
+//project
+.project
+	margin: 18px 0 27px
+	background-color: #dde3e7
+	overflow: hidden
+	+border-radius(3px)
+	+background-image(linear-gradient(bottom, #cfd7dd 0%, #e9edef 100%))
+	.project__item
+		width: 100%
+	.project__img
+		margin-bottom: 18px
+		width: 100%
+		height: 125px
+		overflow: hidden
+		img
+			width: 100%
+	.project__block
+		padding: 0 13px 18px
+		a
+			margin-bottom: 18px
+			font-size: 18.67px 
+			font-weight: bold
+			color: #2EA5DD 
+			display: block
+			&:hover
+				text-decoration: none
+	.project__nav_prev
+		bottom: 18px
+		right: 34px
+		+rotate(180)
+		+s(arr11)
+		&.disabled
+			+rotate(0)
+	.project__nav_next
+		bottom: 18px
+		right: 12px
+		+s(arr11)
+		&.disabled
+			+rotate(180)
+	.disabled
+		+s(arr12)
+
+//solutions
+.solutions
+	position: relative
+	margin-bottom: 10px
+	width: 100%
+	height: 99px
+	overflow: hidden
+	border: 1px solid #D2DBE0 
+	display: inline-block
+	+border-radius(3px)
+	// +clr
+	img
+		width: 100%
+		display: block
+	.solutions__block
+		position: absolute
+		padding-left: 20px 
+		top: 0
+		left: 0
+		width: 35%
+		height: 100%
+		color: #40474A 
+		font-weight: bold 
+		font-size: 14.67px 
+		line-height: 99px
+		z-index: 2
+		background: #fff 
+		+background-image(linear-gradient(bottom, rgba(0,0,0,.05) 0%, rgba(255,255,255,.05) 100%))
+		span
+			line-height: 1.3
+			vertical-align: middle
+			display: inline-block
+		&:before
+			position: absolute
+			content: ""
+			top: 0
+			right: -29px
+			+s(arr24)
+
+.services
+	margin-top: 10px
+	li
+		margin-top: 4px
+		position: relative
+		padding-left: 33px
+		a
+			font-size: 14.67px 
+			color: #099EDA
+			&:hover	
+				text-decoration: none
+		&:before
+			position: absolute
+			content: ""
+			top: 2px
+			left: 0
+			+s(arr25) 
+
+//basket
+.basket
+	position: relative
+	margin-bottom: 25px
+	padding-left: 90px
+	height: 75px
+	width: 100%
+	color: #FF6500 
+	font-weight: bold
+	font-size: 16px 
+	text-align: left
+	overflow: hidden
+	border: 1px solid #fff
+	+border-radius(3px)
+	background-color: #fff
+	+background-image(linear-gradient(bottom, rgba(16,18,16,.05) 0%, rgba(255,255,255,.05) 100%))
+	&:before
+		position: absolute
+		content: ""
+		top: 50%
+		left: 32px
+		margin-top: -23px
+		+s(arr7) 
+	p
+		font-size: 13.33px
+		font-weight: normal 
+	&:active
+		top: -1px
+
+
+//prod
+.prod
+	margin: 6px 0 25px
+	padding-bottom: 8px
+	height: 177px
+	border: 1px solid #d1dbdf
+	+border-radius(3px)
+	+background-clip(padding-box)
+	background-color: #fff
+	.prod__item
+		width: 100%
+		text-align: center
+		a
+			font-size: 14.67px 
+			color: #099eda
+			&:hover
+				text-decoration: none
+	.prod__img
+		margin-bottom: 5px
+		padding-top: 10px
+		height: 122px
+		overflow: hidden
+		+border-radius(3px 3px 0 0)
+		width: 100%
+		
+//nav 
+.prod__nav, .customers__nav
+	top: 50%
+	margin-top: -10px
+	+s(arr8)
+.prod__nav_next, .customers__nav_prev
+	right: 10px
+.prod__nav_prev, .customers__nav_next
+	+rotate(180)
+	left: 10px
+
+
+//download
+.download
+	position: relative
+	padding: 0 62px 0 92px
+	height: 75px
+	width: 100%
+	line-height: 75px
+	color: #FFF 
+	text-decoration: none
+	font-size: 16px
+	font-weight: bold
+	border: 1px solid #fff
+	+border-radius(3px)
+	background-color: #97d5f8
+	+background-image(linear-gradient(bottom, rgba(16,18,16,.19) 0%, rgba(255,255,255,.19) 100%))
+	display: inline-block
+	+box
+	&:before
+		position: absolute
+		content: ''
+		left: 32px
+		top: 50%
+
+	&:active
+		top: -1px
+	span
+		vertical-align: middle
+		line-height: 1.2
+		text-shadow: 0 0 3px rgba(137,207,247,.75)
+		display: inline-block
+	&.download_cat
+		margin-bottom: 18px
+		&:before
+			margin-top: -21px
+			+s(arr9)
+	&.download_pra
+		margin-bottom: 24px
+		&:before
+			margin-top: -24px
+			+s(arr10)
+
+//customers
+.customers
+	position: relative
+	margin-top: 20px
+	border: 1px solid #d1dbdf
+	+border-radius(3px)
+	background: #FFF 
+	.customers__item
+		width: 100%
+		height: 89px
+		text-align: center
+		line-height: 89px
+	.customers__img
+		vertical-align: middle
+		display: inline-block
+
+//characteristics
+.characteristics
+	padding: 22px 22px 25px 
+	border: 1px solid #d1dbdf
+	+border-radius(3px)
+	background: #FFF 
+	.tab
+		overflow: hidden  
+	.tab__item
+		float: left  
+		margin: 0 5px 0
+		&.is-active
+			.tab__link
+				background: #aaa
+	.tab__link
+		display: block  
+		padding: 10px 20px
+		background: #ddd
+		color: #000
+		text-decoration: none  
+	.tab-cont
+		margin: 5px 0
+		padding: 20px
+		border: 1px solid #000

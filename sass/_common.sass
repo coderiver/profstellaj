@@ -40,10 +40,202 @@
 // =book
 // 	font-family: "book",arial,sans-serif 
 	
++font(Trebuchet-MS, Trebuchet-MS)
++font(Helvetica, Helvetica)
+
+=tr
+	font-family: 'Trebuchet-MS', Arial, sans-serif
+=hl
+	font-family: 'Helvetica', Arial, sans-serif
+
+*
+	margin: 0
+
+// body
 body
-	font-size: 12px 
-	font-family: Arial, sans-serif 
+	font-size: 13.33px 
 	line-height: 1.4
+	background-color: #ebf5fb
+	+background-image(linear-gradient(bottom, #fff 0%, #d7ebf7 100%))
+	+tr
 
 
 // common blocks      
+
+//out
+.out
+	padding-bottom: 66px
+	width: 70%
+	min-width: 1000px
+	min-height: 100%
+	height: auto !important
+	height: 100%
+	margin: 0 auto -105px
+	
+//header
+.header
+	padding: 30px 0 0
+	+clr
+	.header__logo
+		float: left
+		display: inline-block
+		+s(logo)
+	.header__right
+		float: right
+		width: 585px
+		display: inline-block
+	.header__row
+		margin-bottom: 14px
+		line-height: 36px
+		.phone, .btn
+			float: right
+		.phone
+			padding-left: 18px
+		
+	.header__link
+		position: relative
+		padding-left: 24px 
+		margin-right: 22px
+		cursor: pointer
+		font-size: 14.67px
+		color: #099EDA 
+		&:hover
+			text-decoration: none
+		&:before
+			position: absolute
+			content: ""
+			top: 0
+			left: 0 
+			overflow: hidden
+	.header__link_map
+		margin-left: 24px
+		padding-left: 0
+		border-bottom: 1px dotted #099EDA
+		&:hover
+			border: none 
+		&:before
+			left: -24px
+	.header__link_skype
+		&:before
+			+s(sk)
+	.header__link_mail
+		&:before
+			+s(mail)
+	.header__link_map
+		&:before
+			+s(sh)
+
+//phone
+.phone
+	font-size: 26.67px 
+	color: #424749 
+	display: inline-block
+	+hl
+	span
+		color: #FC934C 
+		
+//btn
+.btn
+	position: relative
+	text-align: center
+	color: #FFF 
+	overflow: hidden
+	text-decoration: none
+	+border-radius(3px)
+	&:active
+		top: -1px
+
+.btn_yellow
+	padding: 0 14px 
+	font-size: 16px
+	font-style: italic
+	height: 36px
+	background-color: #fe9047
+	+text-shadow(2px 3px 5px rgba(254,124,59,.75))
+	+background-image(linear-gradient(top, #fea958 0%, #fe7a39 100%))
+
+.btn_blue
+	padding: 0 8px 
+	line-height: 27px
+	border-bottom: 1px solid #1598cc
+	background-color: #fd9147
+	+background-image(linear-gradient(bottom, #29bffb 0%, #19ade8 100%)) 
+
+//breadcrumbs
+.breadcrumbs
+	margin-bottom: 24px
+	li
+		font-size: 12px
+		color: #AFB6BA 
+		display: inline-block
+		a
+			margin-right: 5px
+			color: #AFB6BA 
+			&:hover
+				text-decoration: none
+
+//cycle
+.cycle-slideshow
+	position: relative
+	.project__nav, .prod__nav, .customers__nav
+		position: absolute
+		z-index: 200
+		&:hover
+			opacity: 0.8
+
+//title
+.title
+	font-size: 24px
+	font-weight: normal 
+	color: #40474A 
+
+.title_sm
+	font-size: 21.33px
+
+//.footer, .push
+.footer, .push 
+	height: 105px /* .push must be the same height as .footer */
+
+.footer
+	background-color: #cfd7dd
+	+background-image(linear-gradient(bottom, #cfd7dd 0%, #e9edef 100%))
+	+clr
+	.l
+		margin: 0 auto
+		width: 70%
+		text-align: center
+	.footer__logo
+		float: left
+		display: inline-block
+		+s(footlogo)
+	.footer__centr
+		width: 50%
+		display: inline-block
+		.phone
+			font-size: 18.67px 
+			span
+				font-style: normal
+		span
+			padding-left: 13px
+			font-style: italic
+	.footer__centr, .footer__right
+		margin-top: 4px
+	.footer__right
+		float: right
+		line-height: 2.1
+	.studio
+		position: relative
+		padding-left: 34px
+		color: #2EA5DD 
+		display: inline-block
+		&:before
+			position: absolute
+			content: "" 
+			top: -9px
+			left: 6px
+			+s(arr13)
+	.footer__copiright
+		margin-top: 15px
+		padding-left: 38px 
+		text-align: left
+
