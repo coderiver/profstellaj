@@ -250,17 +250,18 @@ body { font-size: 13.33px; line-height: 1.4; }
 .link .link__item.is-active { color: #40474a; border: none; }
 
 .goods .goods__row { font-size: 0; }
-.goods .goods__col { position: relative; margin: 0 0 2% 2%; padding: 20px 20px 20px 130px; width: 49%; border: 1px solid #d2dbe0; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background: white; display: inline-block; *zoom: 1; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.goods .goods__col { position: relative; margin: 0 0 2% 2%; padding: 20px 20px 20px 130px; width: 49%; height: 213px; vertical-align: top; border: 1px solid #d2dbe0; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background: white; display: inline-block; *zoom: 1; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .goods .goods__col:after { content: " "; display: table; clear: both; }
 .goods .goods__col a { font-size: 16px; color: #099eda; }
 .goods .goods__col a:hover { text-decoration: none; }
-.goods .goods__col .btn { float: right; height: 27px; font-size: 16px; }
+.goods .goods__col .goods__price, .goods .goods__col .btn { position: absolute; bottom: 20px; }
+.goods .goods__col .btn { right: 20px; height: 27px; font-size: 16px; }
 .goods .goods__col:first-child { margin-left: 0; }
 .goods .goods__img { position: absolute; top: 20px; left: 20px; }
 .goods .goods__img img { display: block; }
 .goods .goods__list { margin: 15px 0 22px; color: #40474a; font-size: 13.33px; }
 .goods .goods__list span { padding-left: 5px; }
-.goods .goods__price { float: left; color: #40474a; font-size: 19px; font-weight: bold; display: inline-block; }
+.goods .goods__price { left: 130px; color: #40474a; font-size: 19px; font-weight: bold; display: inline-block; }
 .goods .goods__price i { display: inline-block; background: url('../img/icons-sa93df1e196.png') 0 -143px no-repeat; width: 11px; height: 14px; }
 
 .about { color: #40474a; }
