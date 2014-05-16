@@ -154,22 +154,33 @@
 			display: block
 			&:hover
 				text-decoration: none
-	.project__nav_prev
-		bottom: 18px
-		right: 34px
+		
+//.project, .shelving	
+.project, .shelving
+	.project__nav_prev, .shelving__nav_prev
 		+rotate(180)
 		+s(arr11)
 		&.disabled
 			+rotate(0)
-	.project__nav_next
-		bottom: 18px
-		right: 12px
+	.project__nav_next, .shelving__nav_next
 		+s(arr11)
 		&.disabled
 			+rotate(180)
+	.project__nav_prev
+		bottom: 18px
+		right: 34px
+	.project__nav_next
+		bottom: 18px
+		right: 12px
+	.shelving__nav
+		top: 50%
+		margin-top: -40px
+	.shelving__nav_prev
+		left: 0
+	.shelving__nav_next
+		right: 0
 	.disabled
 		+s(arr12)
-
 //solutions
 .solutions
 	position: relative
@@ -293,11 +304,10 @@
 	+rotate(180)
 	left: 10px
 
-
 //download
 .download
 	position: relative
-	padding: 0 62px 0 92px
+	padding: 0 50px 0 92px
 	height: 75px
 	width: 100%
 	line-height: 75px
@@ -353,25 +363,113 @@
 
 //characteristics
 .characteristics
-	padding: 22px 22px 25px 
+	padding: 22px 22px 0 
 	border: 1px solid #d1dbdf
 	+border-radius(3px)
 	background: #FFF 
+	.characteristics__block
+		margin-bottom: 50px
+		+clr
+	.js-tab-group
+		overflow: hidden
 	.tab
-		overflow: hidden  
+		overflow: hidden 
+		font-size: 0 
 	.tab__item
 		float: left  
-		margin: 0 5px 0
+		margin-left: 0.5%
+		width: 19.5%
+		+box
 		&.is-active
 			.tab__link
-				background: #aaa
-	.tab__link
-		display: block  
-		padding: 10px 20px
-		background: #ddd
-		color: #000
-		text-decoration: none  
+				color: #FFF 
+				background-color: #95d3f7
+				+background-image(linear-gradient(bottom, #29bffb 0%, #19ade8 100%))
+		&:first-child
+			margin-left: 0
+	.tab__link  
+		padding: 0 5px 
+		line-height: 33px
+		width: 100%
+		font-size: 14.67px 
+		text-align: center
+		color: #40474a
+		text-decoration: none 
+		+border-radius(3px)
+		background-color: #d5dfe7
+		+background-image(linear-gradient(bottom, rgba(16,18,16,.41) 0%, rgba(255,255,255,.41) 100%))
+		display: block
+		+box
 	.tab-cont
-		margin: 5px 0
-		padding: 20px
-		border: 1px solid #000
+		margin: 28px 0 25px
+		overflow: auto
+		min-width: 640px
+		+scrollbar
+			height: 8px
+			overflow: hidden
+			background: #e6ecf1
+			+border-radius(3px)
+		+scrollbar-thumb
+			+border-radius(3px)
+			background: #bbc8d1
+		+scrollbar-track-piece 
+			height: 8px 
+			+border-radius(3px)
+	.tab-wrap
+		width: 825px
+	.tab-block
+		margin-right: 5px
+		padding: 0 5px 22px 16px 
+		float: left
+		width: 160px
+		+box
+	//shelving
+	.shelving
+		float: left
+		width: 160px
+		.cycle-slide
+			margin-left: 8px
+			width: 145px
+			height: 225px
+			overflow: hidden
+			display: block
+		.custom-pager
+			margin-top: 5px
+		button
+			img
+				display: block
+		.cycle-pager-active
+			display: none !important
+	
+	//characteristics__centr
+	.characteristics__centr
+		float: left
+		padding-left: 22px
+		color: #40474A 
+	.title-char
+		font-weight: bold
+		font-size: 16px
+	.characteristics__list	
+		margin-top: 15px
+		font-size: 13.33px
+		li
+			line-height: 1
+			margin-bottom: 10px 
+		span
+			padding-left: 5px
+			
+	//characteristics__right
+	.characteristics__right
+		float: right
+		width: 162px
+	.purchase
+		margin-top: 45px
+		width: 95px
+	.purchase__price
+		font-size: 33.33px
+		color: #40474A  
+		line-height: 1 
+		letter-spacing: -0.6px 
+		i
+			display: inline-block
+			+s(arr26)

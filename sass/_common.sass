@@ -55,6 +55,11 @@
 body
 	font-size: 13.33px 
 	line-height: 1.4
+.wrap
+	min-height: 100%
+	height: auto !important
+	height: 100%
+	margin: 0 auto -105px
 	background-color: #ebf5fb
 	+background-image(linear-gradient(bottom, #fff 0%, #d7ebf7 100%))
 	+tr
@@ -64,13 +69,10 @@ body
 
 //out
 .out
+	margin: 0 auto
 	padding-bottom: 66px
 	width: 70%
-	min-width: 1000px
-	min-height: 100%
-	height: auto !important
-	height: 100%
-	margin: 0 auto -105px
+	min-width: 1183px
 	
 //header
 .header
@@ -144,7 +146,35 @@ body
 	+border-radius(3px)
 	&:active
 		top: -1px
-
+		
+.btn_grey
+	position: relative
+	padding-left: 55px
+	width: 100%
+	height: 49px
+	font-style: italic
+	color: #099EDA 
+	line-height: 49px
+	text-align: left
+	text-decoration: underline
+	background-color: #ebf1f5
+	display: inline-block
+	+box
+	&:hover
+		text-decoration: none
+	&:before
+		position: absolute
+		content: ''
+		top: 50%
+		left: 15px
+		margin-top: -16px
+	&.btn_grey-question
+		margin-bottom: 23px
+		&:before	
+			+s(arr5)
+	&.btn_grey-print
+		&:before
+			+s(arr6)
 .btn_yellow
 	padding: 0 14px 
 	font-size: 16px
@@ -160,6 +190,15 @@ body
 	border-bottom: 1px solid #1598cc
 	background-color: #fd9147
 	+background-image(linear-gradient(bottom, #29bffb 0%, #19ade8 100%)) 
+.btn_orange
+	width: 100%
+	height: 33px
+	font-size: 19px
+	+text-shadow(2px 3px 5px rgba(254,124,59,.75))
+	+border-radius(3px)
+	border-bottom: 3px solid #C96A3C 
+	background-color: #fd9147
+	+background-image(linear-gradient(bottom, #fea857 0%, #fe7938 100%))
 
 //breadcrumbs
 .breadcrumbs
@@ -177,7 +216,7 @@ body
 //cycle
 .cycle-slideshow
 	position: relative
-	.project__nav, .prod__nav, .customers__nav
+	.project__nav, .prod__nav, .customers__nav, .shelving__nav
 		position: absolute
 		z-index: 200
 		&:hover
@@ -191,6 +230,39 @@ body
 
 .title_sm
 	font-size: 21.33px
+
+//choose
+.choose
+	position: relative
+	margin: 18px 0 22px 
+	padding: 0 32px
+	width: 100%
+	height: 30px
+	+border-radius(3px)
+	background-color: #d4e0e8
+	+background-image(linear-gradient(bottom, rgba(16,18,16,.41) 0%, rgba(255,255,255,.41) 100%))
+	display: inline-block
+	+box
+.choose__input
+	height: 28.5px
+	width: 31px
+	text-align: center
+	font-size: 18px
+	border-top: 1px solid #D2DBE0 
+	border-bottom: 1px solid #D2DBE0 
+	display: block
+.choose__plus,
+.choose__minus
+	position: absolute
+	top: 50%
+.choose__plus
+	right: 9px
+	margin-top: -7px
+	+s(plu)
+.choose__minus
+	left: 10px
+	margin-top: -2px
+	+s(min)
 
 //.footer, .push
 .footer, .push 
