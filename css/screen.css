@@ -256,6 +256,7 @@ body { font-size: 13.33px; line-height: 1.4; }
 .goods .goods__col a:hover { text-decoration: none; }
 .goods .goods__col .goods__price, .goods .goods__col .btn { position: absolute; bottom: 20px; }
 .goods .goods__col .btn { right: 20px; height: 27px; font-size: 16px; }
+.goods .goods__col .btn:active { top: auto; bottom: 21px; }
 .goods .goods__col:first-child { margin-left: 0; }
 .goods .goods__img { position: absolute; top: 20px; left: 20px; }
 .goods .goods__img img { display: block; }
@@ -274,3 +275,22 @@ body { font-size: 13.33px; line-height: 1.4; }
 .about .about__item.about__item_3:before { background: url('../img/icons-sa93df1e196.png') 0 -883px no-repeat; width: 38px; height: 36px; }
 .about .about__item .title_lit { margin-bottom: 10px; color: #ff6600; display: inline-block; }
 .about .about__item p { padding: 0; font-size: 12px; font-style: italic; }
+
+.news { margin-top: 20px; }
+.news .title { margin-bottom: 20px; }
+.news .data { margin-bottom: 2px; }
+.news a { margin-bottom: 8px; font-size: 16px; line-height: 1; color: #2ea5dd; display: inline-block; }
+.news a:hover { text-decoration: none; }
+.news p { color: #40474a; font-style: italic; }
+
+.news__col { margin-bottom: 15px; }
+
+.data { color: #afb6ba; }
+
+.shelves { margin-top: 18px; }
+.shelves .shelves__row { margin-bottom: 24px; font-size: 0; }
+.shelves .shelves__col { margin-left: 2%; width: 32%; font-weight: bold; font-size: 16px; color: #2ea5dd; vertical-align: top; display: inline-block; }
+.shelves .shelves__col:hover { text-decoration: none; }
+.shelves .shelves__col:first-child { margin-left: 0; }
+.shelves .shelves__img { margin-bottom: 22px; height: 143px; width: 100%; line-height: 143px; text-align: center; border: 1px solid #f1f3f3; background-color: white; -webkit-box-shadow: 0 1px 2px rgba(83, 95, 103, 0.3); -moz-box-shadow: 0 1px 2px rgba(83, 95, 103, 0.3); box-shadow: 0 1px 2px rgba(83, 95, 103, 0.3); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.shelves .shelves__img img { vertical-align: middle; display: inline-block; }
