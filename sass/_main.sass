@@ -473,3 +473,142 @@
 		i
 			display: inline-block
 			+s(arr26)
+
+// banner page
+
+//banner
+.banner
+	position: relative
+	overflow: hidden
+	border-bottom: 1px solid #D5DEE3 
+	+border-radius(3px)
+	.banner-pager
+		position: absolute
+		right: 13px
+		bottom: 9px
+		z-index: 200
+		display: inline-block
+		button
+			margin-left: 5px
+			width: 10px
+			height: 10px
+			border: 2px solid #fff
+			+border-radius(50%)
+			background: none
+			&.cycle-pager-active
+				background: #fff 
+	.banner__item
+		width: 100%
+	.banner__img
+		width: 100%
+		display: block
+	.btn
+		position: absolute
+		left: 20px
+		bottom: 20px
+		height: 42px
+		font-size: 24px
+		&:active
+			top: auto 
+			bottom: 21px
+
+//link
+.link
+	margin: 18px 0 
+	.link__item
+		margin-right: 30px
+		font-size: 24px
+		color: #099EDA 
+		text-decoration: none
+		border-bottom: 1px dotted #099EDA 
+		&:hover	
+			border: none 
+		&.is-active
+			color: #40474A 
+			border: none 
+// goods
+.goods
+	.goods__row
+		font-size: 0
+	.goods__col
+		position: relative
+		margin: 0 0 2% 2%
+		padding: 20px 20px 20px 130px 
+		width: 49%
+		border: 1px solid #D2DBE0 
+		+border-radius(3px)
+		background: #FFF
+		display: inline-block
+		+clr
+		+box
+		a
+			font-size: 16px
+			color: #099EDA 
+			&:hover
+				text-decoration: none
+		.btn
+			float: right
+			height: 27px
+			font-size: 16px
+		&:first-child
+			margin-left: 0
+	.goods__img
+		position: absolute
+		top: 20px
+		left: 20px
+		img
+			display: block
+	.goods__list
+		margin: 15px 0 22px
+		color: #40474A 
+		font-size: 13.33px
+		span
+			padding-left: 5px
+	.goods__price
+		float: left
+		color: #40474A 
+		font-size: 19px 
+		font-weight: bold 
+		display: inline-block
+		i
+			display: inline-block
+			+s(arr28)
+
+//about
+.about
+	color: #40474A 
+	p
+		padding-bottom: 12px
+	.about__row
+		margin: 18px 0
+		font-size: 0
+	.about__item
+		position: relative
+		padding-left: 54px
+		width: 33%
+		vertical-align: top
+		display: inline-block
+		+box
+		&:before
+			position: absolute
+			content: ''
+			top: 5px
+			left: 0
+		&.about__item_1
+			&:before
+				+s(arr30)
+		&.about__item_2
+			&:before
+				+s(arr31)
+		&.about__item_3
+			&:before
+				+s(arr32)
+		.title_lit
+			margin-bottom: 10px
+			color: #F60 
+			display: inline-block
+		p
+			padding: 0
+			font-size: 12px
+			font-style: italic
+		
