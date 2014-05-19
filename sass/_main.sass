@@ -236,6 +236,7 @@
 			content: ""
 			top: 2px
 			left: 0
+			+border-radius(50%)
 			+s(arr25) 
 
 //basket
@@ -647,6 +648,7 @@
 //shelves
 .shelves
 	margin-top: 18px
+	+clr
 	.shelves__row
 		margin-bottom: 24px
 		font-size: 0
@@ -677,3 +679,77 @@
 			// margin: 0 auto
 			vertical-align: middle
 			display: inline-block
+		
+//characteristics
+.characteristics_mod
+	margin-top: 10px
+	.characteristics__roster
+		float: left
+		margin-left: 28px
+		width: 66%
+		li
+			position: relative
+			margin-bottom: 12px
+			padding-left: 18px
+			color: #40474A 
+			&:before
+				position: absolute
+				content: ""
+				left: 0
+				top: 6px
+				+s(arr34) 
+	.characteristics__block
+		position: relative
+		.btn_abs-or
+			position: absolute
+			right: 0
+			bottom: 0
+			font-size: 14.67px 
+			&:active
+				top: auto
+				bottom: 1px
+				
+//.characteristics__table
+.characteristics__table
+	margin-bottom: 28px
+	tr
+		td, th
+			color: #40474A 
+			text-align: center
+			&:first-child
+				width: 170px
+		th
+			height: 43px
+			font-size: 12px
+			font-weight: normal 
+			vertical-align: middle
+			background-color: #d5dfe7
+			+background-image(linear-gradient(bottom, rgba(16,18,16,.41) 0%, rgba(255,255,255,.41) 100%))
+			&:first-child
+				+border-radius(3px 0 0 3px)
+			&:last-child
+				+border-radius(0 3px 3px 0)
+		td
+			padding-top: 15px
+			height: 62px
+			line-height: 1.1
+			border-bottom: 1px solid #ccd4d8 
+			+box
+			&:first-child
+				padding-left: 12px
+				text-align: left
+			&:nth-child(7)
+				font-weight: bold 
+				text-transform: uppercase
+			a
+				color: #099EDA 
+				&:hover
+					text-decoration: none
+			span
+				display: inline-block
+				+s(arr35)
+			.btn
+				padding: 4px 5px
+				height: auto
+				font-size: 12px
+				font-style: normal

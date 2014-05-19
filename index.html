@@ -177,132 +177,159 @@
 			<!-- BEGIN .l-col2 -->
 			<div class="l-col2">
 				
-				<!-- BEGIN .breadcrumbs -->
-				<ul class="breadcrumbs">
-					<li><a href="#">Главная</a>/</li>
-					<li><a href="#">Стеллажи</a>/</li>
-					<li><a href="#">Металлические стеллажи</a>/</li>
-					<li><span>Стеллаж металический универсальный «Лайт»</span></li>
-				</ul>
-				<!-- END .breadcrumbs -->
+				<!-- BEGIN .banner -->
+				<div class="banner">
+					<div class="cycle-slideshow" 
+				    data-cycle-fx="scrollHorz"
+				    data-cycle-timeout="3000"
+						data-cycle-pause-on-hover="true"
+						data-cycle-slides=".banner__item"
+						data-cycle-prev=".banner__nav_prev"
+						data-cycle-next=".banner__nav_next"
+						data-cycle-pager-template="<button></button>"
+						data-cycle-pager=".banner-pager"
+				    >
+				    <div class="banner-pager"></div>
+				    <div class="banner__item">
+				    	<img class="banner__img" src="img/banner.png" alt="img">
+				    	<button class="btn btn_orange">Купить</button>
+				  	</div>
+				    <div class="banner__item">
+				    	<img class="banner__img" src="img/banner.png" alt="img">
+				    	<button class="btn btn_orange">Купить</button>
+				  	</div>
+				    <div class="banner__item">
+				    	<img class="banner__img" src="img/banner.png" alt="img">
+				    	<button class="btn btn_orange">Купить</button>
+				  	</div>
+					</div>
+				</div>
+				<!-- END .banner -->
+				
+				<!-- BEGIN .link -->
+				<div class="link">
+					<a href="#" class="link__item is-active">Хиты продаж</a>
+					<a href="#" class="link__item">Новинки</a>
+				</div>
+				<!-- END .link -->
 
-				<!-- BEGIN .characteristics -->
-				<div class="characteristics">
-
-					<!-- BEGIN .characteristics__block -->
-					<div class="characteristics__block">
-						<div class="shelving">
-							<div class="cycle-slideshow" 
-						    data-cycle-fx="scrollHorz"
-						    data-cycle-timeout="0"
-				    		data-allow-wrap="false"
-								data-cycle-pause-on-hover="true"
-								data-cycle-slides=".shelving__item"
-								data-cycle-prev=".shelving__nav_prev"
-								data-cycle-next=".shelving__nav_next"
-								data-cycle-pager-template="<button><img src='{{src}}' width=70 height=70></button>"
-								data-cycle-pager=".custom-pager"
-						    >
-						    <button class="shelving__nav shelving__nav_prev"></button>
-								<button class="shelving__nav shelving__nav_next"></button>
-								<div class="custom-pager"></div>
-								<img class="shelving__item" src="img/arr21.png" alt="img">
-								<img class="shelving__item" src="img/arr23.png" alt="img">
-								<img class="shelving__item" src="img/arr22.png" alt="img">
+				<!-- BEGIN .goods -->
+				<div class="goods">
+					<div class="goods__row">
+						<div class="goods__col">
+							<div class="goods__img">
+								<img src="img/arr27.png" alt="img">
 							</div>
-						</div>
-						<div class="characteristics__centr">
-							<h3 class="title-char">Характеристики</h3>
-							<ul class="characteristics__list">
-								<li>Кол-во полок:<span>4</span></li>
+							<a href="#">Стеллаж металлический Лайт-234</a>
+							<ul class="goods__list">
 								<li>Нагрузка на полку:<span>120 кг</span></li>
 								<li>Высота:<span>2000 мм</span></li>
 								<li>Ширина:<span>1000 мм</span></li>
 								<li>Глубина:<span>300 мм</span></li>
 							</ul>
+							<div class="goods__price">1680 <i></i></div>
+							<button class="btn btn_orange">Купить</button>
 						</div>
-						<div class="characteristics__right">
-							<button class="btn_grey btn_grey-question">Задать вопрос</button>
-							<button class="btn_grey btn_grey-print">Печать</button>
-							<div class="purchase">
-								<div class="purchase__price">1680 <i></i></div>
-								<div class="choose js-choose" data-max-number="9">
-									<input class="choose__input" type="text" readonly="" value="1">
-									<button class="choose__plus js-plus"></button>
-									<button class="choose__minus js-minus"></button>
-								</div>
-								<button class="btn btn_orange">Купить</button>
+						<div class="goods__col">
+							<div class="goods__img">
+								<img src="img/arr27.png" alt="img">
 							</div>
+							<a href="#">Стеллаж металлический Лайт-234</a>
+							<ul class="goods__list">
+								<li>Нагрузка на полку:<span>120 кг</span></li>
+								<li>Высота:<span>2000 мм</span></li>
+								<li>Ширина:<span>1000 мм</span></li>
+								<li>Глубина:<span>300 мм</span></li>
+							</ul>
+							<div class="goods__price">1680 <i></i></div>
+							<button class="btn btn_orange">Купить</button>
 						</div>
 					</div>
-					<!-- END .characteristics__block -->
-
-					<div class="js-tab-group">
-					  <!-- tab list -->
-					  <ul class="tab js-tab">
-					    <li class="tab__item">
-					      <a href="js-tab1" class="tab__link">Конструкция</a>
-					    </li>
-					    <li class="tab__item">
-					      <a href="js-tab2" class="tab__link">Комплектующие</a>
-					    </li>
-					    <li class="tab__item">
-					      <a href="js-tab3" class="tab__link">Инструкции</a>
-					    </li>
-					    <li class="tab__item">
-					      <a href="js-tab4" class="tab__link">Отзывы</a>
-					    </li>
-					    <li class="tab__item">
-					      <a href="js-tab5" class="tab__link">Доставка</a>
-					    </li>
-					  </ul>
-					  <!-- END tab list -->
-					  <!-- tab content -->
-					  <div class="tab-cont js-tab-cont js-tab1">
-					  	<div class="tab-wrap">
-					     <div class="tab-block">
-					     		<img src="img/arr15.png" alt="img">
-					     		<p>Надежное крепление на болтах</p>
-					     		<p>Простое и надежное крепление полок на болтах гарантирует прочность конструкции и простоту сборку.</p>
-					     </div>
-					     <div class="tab-block">
-					     		<img src="img/arr16.png" alt="img">
-					     		<p>Надежное крепление на болтах</p>
-					     		<p>Простое и надежное крепление полок на болтах гарантирует прочность конструкции и простоту сборку.</p>
-					     </div>
-					     <div class="tab-block">
-					     		<img src="img/arr17.png" alt="img">
-					     		<p>Надежное крепление на болтах</p>
-					     		<p>Стойки стеллажей выполнены с интегрированным подпятником в нижней части. Это повышает устойчивость стеллажа и защищает ваши полы от повреждений.</p>
-					     </div>
-					     <div class="tab-block">
-					     		<img src="img/arr18.png" alt="img">
-					     		<p>Надежное крепление на болтах</p>
-					     		<p>Простое и надежное крепление полок на болтах гарантирует прочность конструкции и простоту сборку.</p>
-					     </div>
-					     <div class="tab-block">
-					     		<img src="img/arr15.png" alt="img">
-					     		<p>Надежное крепление на болтах</p>
-					     		<p>Простое и надежное крепление полок на болтах гарантирует прочность конструкции и простоту сборку.</p>
-					     </div>
-					  	</div>
-					  </div>
-					  <div class="tab-cont js-tab-cont js-tab2">
-					    text
-					  </div>
-					  <div class="tab-cont js-tab-cont js-tab3">
-					  	text
-					  </div>
-					  <div class="tab-cont js-tab-cont js-tab4">
-					  	text
-					  </div>
-					  <div class="tab-cont js-tab-cont js-tab5">
-					  	text
-					  </div>
-					  <!-- END tab content -->
+					<div class="goods__row">
+						<div class="goods__col">
+							<div class="goods__img">
+								<img src="img/arr27.png" alt="img">
+							</div>
+							<a href="#">Стеллаж металлический Лайт-234</a>
+							<ul class="goods__list">
+								<li>Нагрузка на полку:<span>120 кг</span></li>
+								<li>Высота:<span>2000 мм</span></li>
+								<li>Ширина:<span>1000 мм</span></li>
+								<li>Глубина:<span>300 мм</span></li>
+							</ul>
+							<div class="goods__price">31708 <i></i></div>
+							<button class="btn btn_orange">Купить</button>
+						</div>
+						<div class="goods__col">
+							<div class="goods__img">
+								<img src="img/arr29.png" alt="img">
+							</div>
+							<a href="#">Стеллаж металлический Лайт-234</a>
+							<ul class="goods__list">
+								<li>Нагрузка на полку:<span>120 кг</span></li>
+								<li>Высота:<span>2000 мм</span></li>
+								<li>Глубина:<span>300 мм</span></li>
+							</ul>
+							<div class="goods__price">1680 <i></i></div>
+							<button class="btn btn_orange">Купить</button>
+						</div>
+					</div>
+					<div class="goods__row">
+						<div class="goods__col">
+							<div class="goods__img">
+								<img src="img/arr27.png" alt="img">
+							</div>
+							<a href="#">Стеллаж металлический Лайт-234</a>
+							<ul class="goods__list">
+								<li>Нагрузка на полку:<span>120 кг</span></li>
+								<li>Высота:<span>2000 мм</span></li>
+								<li>Ширина:<span>1000 мм</span></li>
+								<li>Глубина:<span>300 мм</span></li>
+							</ul>
+							<div class="goods__price">1680 <i></i></div>
+							<button class="btn btn_orange">Купить</button>
+						</div>
+						<div class="goods__col">
+							<div class="goods__img">
+								<img src="img/arr27.png" alt="img">
+							</div>
+							<a href="#">Стеллаж металлический Лайт-234</a>
+							<ul class="goods__list">
+								<li>Нагрузка на полку:<span>120 кг</span></li>
+								<li>Высота:<span>2000 мм</span></li>
+								<li>Ширина:<span>1000 мм</span></li>
+								<li>Глубина:<span>300 мм</span></li>
+							</ul>
+							<div class="goods__price">1680 <i></i></div>
+							<button class="btn btn_orange">Купить</button>
+						</div>
 					</div>
 				</div>
-				<!-- END .characteristics -->
+				<!-- END .goods -->
+
+				<!-- BEGIN .about -->
+				<div class="about">
+					<h3 class="title">О компании</h3>
+					<div class="about__row">
+						<div class="about__item about__item_1">
+								<a class="title title_lit" href="#">Современное производство </a>
+								<p>Лучшие производительные линии в городе</p>
+						</div>
+						<div class="about__item about__item_2">
+								<a class="title_lit" href="#">Квалифицированные специалисты</a>
+								<p>Профессиональный подбор, выезд специалиста для консультации</p>
+						</div>
+						<div class="about__item about__item_3">
+								<a class="title_lit" href="#">Гарантийное обслуживание</a>
+								<p>Официальная гарантия на весь ассортимент и работы</p>
+						</div>
+					</div>
+					<p>Компания «Профстеллаж» — крупнейший производитель складского оборудования. Металлические стеллажи и другое складское оборудование от «Профстеллаж» могут служить эталоном качества и надежности.</p>
+					<p>Принимая решение купить складские стеллажи у «Профстеллаж», вы можете быть уверены, что свой заказ (независимо от того, выберете вы стандартные торговые стеллажи или складские или же закажете новую конструкцию, спроектированную специально для вас) вы получите максимально оперативно.Производитель складских и торговых стеллажей «Профстеллаж» предлагает вам основные виды складского оборудования.</p>
+					<p>«Профстеллаж» — производитель торговых и складских стеллажей и другого складского оборудования. 
+					Наши покупатели, конкуренты (другие крупные производители стеллажей) и бизнес-партнеры по достоинству оценивают нашу продукцию, основную часть которой составляют различные виды металлических стеллажей для склада. Тем не менее, цены на складские стеллажи остаются доступными, а качество конечной продукции постоянно повышается.</p>
+				</div>
+				<!-- END .about -->
 
 			</div>
 			<!-- END .l-col2 -->
@@ -385,7 +412,32 @@
 					</div>
 				</div>
 				<!-- END .customers -->
-
+				
+				<!-- BEGIN .news -->
+				<div class="news">
+					<h3 class="title">Новости</h3>
+					<div class="news__col">
+						<div class="data">21 марта</div>
+						<a href="#">Комплекты: вместе дешевле!</a>
+						<p>Рады представить вашему вниманию новый проект: "Вместе дешевле"!</p>
+					</div>
+					<div class="news__col">
+						<div class="data">21 марта</div>
+						<a href="#">Комплекты: вместе дешевле!</a>
+						<p>Рады представить вашему вниманию новый проект: "Вместе дешевле"!</p>
+					</div>
+					<div class="news__col">
+						<div class="data">21 марта</div>
+						<a href="#">Комплекты: вместе дешевле!</a>
+						<p>Рады представить вашему вниманию новый проект: "Вместе дешевле"!</p>
+					</div>
+					<div class="news__col">
+						<div class="data">21 марта</div>
+						<a href="#">Комплекты: вместе дешевле!</a>
+						<p>Рады представить вашему вниманию новый проект: "Вместе дешевле"!</p>
+					</div>
+				</div>
+				<!-- END .news -->
 			</div>
 			<!-- END .l-col3 -->
 
