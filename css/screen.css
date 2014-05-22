@@ -98,7 +98,7 @@ body { font-size: 13.33px; line-height: 1.4; }
 
 .footer { background-color: #cfd7dd; background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #cfd7dd), color-stop(100%, #e9edef)); background-image: -webkit-linear-gradient(bottom, #cfd7dd 0%, #e9edef 100%); background-image: -moz-linear-gradient(bottom, #cfd7dd 0%, #e9edef 100%); background-image: -o-linear-gradient(bottom, #cfd7dd 0%, #e9edef 100%); background-image: linear-gradient(bottom, #cfd7dd 0%, #e9edef 100%); *zoom: 1; }
 .footer:after { content: " "; display: table; clear: both; }
-.footer .l { margin: 0 auto; width: 70%; min-width: 1000px; text-align: center; }
+.footer .l { margin: 0 auto; width: 70%; min-width: 990px; text-align: center; }
 .footer .footer__logo { float: left; display: inline-block; background: url('../img/icons-s5e96b328a5.png') 0 -59px no-repeat; width: 220px; height: 40px; }
 .footer .footer__centr { width: 50%; display: inline-block; }
 .footer .footer__centr .phone { font-size: 18.67px; }
